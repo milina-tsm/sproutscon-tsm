@@ -1,1 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>True Sea Moss · SproutsCon 2026 · Booth 862 — Promo Staff One-Pager</title>
+<style>
+  :root{
+    --ink:#162326;
+    --ink-soft:#47585c;
+    --line:#dee6e7;
+    --paper:#ffffff;
+    --wash:#f4f8f8;
+    --teal:#1c5560;
+    --teal-soft:#e3eff1;
+    --coral:#d4663f;
+    --coral-soft:#fbeae2;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--wash);
+    color:var(--ink);
+    font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;
+  }
+  .sheet{max-width:940px;margin:0 auto;background:var(--paper);}
+  /* ---------- header ---------- */
+  header{
+    background:var(--teal);
+    color:#fff;
+    padding:26px 32px 22px;
+  }
+  .brandrow{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap}
+  .wordmark{font-size:32px;font-weight:800;letter-spacing:.06em;line-height:1;margin:0}
+  .tagline{margin:6px 0 0;font-size:13px;opacity:.85;letter-spacing:.04em}
+  .booth-chip{
+    background:#fff;color:var(--teal);
+    border-radius:10px;padding:10px 16px;text-align:center;flex:none;
+  }
+  .booth-chip .lbl{display:block;font-size:10px;letter-spacing:.16em;font-weight:700;opacity:.7}
+  .booth-chip .num{display:block;font-size:28px;font-weight:800;line-height:1.1}
+  .subhead{
+    margin-top:18px;padding-top:14px;border-top:1px solid rgba(255,255,255,.25);
+    font-size:14px;display:flex;gap:22px;flex-wrap:wrap
+  }
+  .subhead b{font-weight:700}
+  /* ---------- layout ---------- */
+  main{padding:28px 32px 40px}
+  section{margin:0 0 30px}
+  h2{
+    font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);
+    margin:0 0 12px;padding-bottom:7px;border-bottom:2px solid var(--teal-soft);font-weight:800
+  }
+  h3{font-size:15px;margin:0 0 5px;font-weight:700}
+  p{margin:0 0 10px}
+  .muted{color:var(--ink-soft)}
+  .small{font-size:13px}
+  /* ---------- fast facts ---------- */
+  .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+  .fact{background:var(--wash);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+  .fact .k{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);font-weight:700}
+  .fact .v{font-size:17px;font-weight:700;margin-top:3px;line-height:1.3}
+  .fact .n{font-size:12px;color:var(--ink-soft);margin-top:2px}
+  .fact a{color:var(--teal);font-weight:700}
+  .fact.booth{background:var(--teal-soft);border-color:#c6dce0}
+  /* ---------- two col ---------- */
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  @media(max-width:720px){.cols{grid-template-columns:1fr;gap:22px}}
+  /* ---------- timeline ---------- */
+  .tl{list-style:none;margin:0;padding:0;border-left:2px solid var(--teal-soft)}
+  .tl li{position:relative;padding:0 0 14px 20px}
+  .tl li::before{
+    content:"";position:absolute;left:-6px;top:6px;width:10px;height:10px;border-radius:50%;
+    background:#fff;border:2px solid var(--teal)
+  }
+  .tl li.hot::before{background:var(--coral);border-color:var(--coral)}
+  .tl .t{font-weight:800;font-size:14px}
+  .tl .d{font-size:13px;color:var(--ink-soft)}
+  /* ---------- sampling table ---------- */
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{
+    font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);
+    background:var(--wash);font-weight:700
+  }
+  td.prodname{font-weight:700;width:30%}
+  .tbd{
+    display:inline-block;background:var(--coral);color:#fff;font-size:10px;font-weight:800;
+    letter-spacing:.08em;padding:2px 7px;border-radius:4px;vertical-align:middle
+  }
+  /* ---------- links ---------- */
+  .links{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+  .lk{
+    display:block;border:1px solid var(--line);border-radius:10px;padding:13px 15px;
+    text-decoration:none;color:var(--ink);background:#fff
+  }
+  .lk:hover{border-color:var(--teal);background:var(--teal-soft)}
+  .lk .k{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);font-weight:700}
+  .lk .v{font-weight:700;margin-top:3px;font-size:15px;color:var(--teal)}
+  .lk .n{font-size:12px;color:var(--ink-soft);margin-top:3px}
+  .lk.todo{border:2px dashed var(--coral);background:var(--coral-soft)}
+  .lk.todo .v{color:var(--coral)}
+  footer{
+    padding:18px 32px 30px;font-size:12px;color:var(--ink-soft);border-top:1px solid var(--line)
+  }
+  @media print{
+    body{background:#fff}
+    .sheet{max-width:none}
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    section{break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
 
+<header>
+  <div class="brandrow">
+    <div>
+      <p class="wordmark">TRUE SEA MOSS</p>
+      <p class="tagline">Wild-harvested sea moss · Promo staff one-pager</p>
+    </div>
+    <div class="booth-chip">
+      <span class="lbl">BOOTH</span>
+      <span class="num">862</span>
+    </div>
+  </div>
+  <div class="subhead">
+    <span><b>SproutsCon 2026</b></span>
+    <span>Monday, <b>August 10, 2026</b></span>
+    <span>Show floor <b>11:30 AM – 5:30 PM</b></span>
+    <span>Gaylord Opryland, Nashville · <b>Ryman Exhibit Hall</b></span>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ FAST FACTS ============ -->
+  <section>
+    <h2>Read this first</h2>
+    <div class="facts">
+      <div class="fact">
+        <div class="k">Be ready at</div>
+        <div class="v">11:30 AM</div>
+        <div class="n">On the floor and ready to go — 15 min earlier is ideal</div>
+      </div>
+      <div class="fact">
+        <div class="k">Doors open</div>
+        <div class="v">11:30 AM</div>
+        <div class="n">Exhibit hall opens to attendees</div>
+      </div>
+      <div class="fact">
+        <div class="k">Show ends</div>
+        <div class="v">5:30 PM</div>
+        <div class="n">End of your shift</div>
+      </div>
+      <div class="fact booth">
+        <div class="k">Your booth</div>
+        <div class="v">#862</div>
+        <div class="n">Ryman Exhibit Hall · 10×9 standard booth<br>
+          <a href="https://sproutscon2026.vfairs.com/backend/v2/floor-plan-viewer?id=eyJpdiI6IndKTmVQcitQZEZkdHd2VEZpV3kwQWc9PSIsInZhbHVlIjoiOCsxZHd3ZmlzMmFZVVpYTWxyenpNZz09IiwibWFjIjoiZTg0YzAwZTM2M2I5MTdlMzM5MWUzZWQ5ZTM1MTA2OTg0MjU2NzZhMmVjNjRjMjY4OTA2NGNhNjMyOWNkZTNmOCIsInRhZyI6IiJ9" target="_blank" rel="noopener">↗ Open interactive venue map</a>
+        </div>
+      </div>
+      <div class="fact">
+        <div class="k">On-site lead</div>
+        <div class="v">Kristin Carroll</div>
+        <div class="n">Director of Sales, True Sea Moss<br>
+          <a href="tel:+12142329690">214.232.9690</a><br>
+          <a href="mailto:k.carroll@trueseamoss.com">k.carroll@trueseamoss.com</a>
+        </div>
+      </div>
+      <div class="fact">
+        <div class="k">Who you're talking to</div>
+        <div class="v">~2,100</div>
+        <div class="n">Sprouts store team members &amp; managers — not consumers</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VENUE + TIMELINE ============ -->
+  <section>
+    <div class="cols">
+      <div>
+        <h2>Venue</h2>
+        <h3>Gaylord Opryland Resort &amp; Convention Center</h3>
+        <p class="small">2800 Opryland Dr, Nashville, TN 37214<br>
+        Show floor: <b>Ryman Exhibit Hall</b> · Booth <b>862</b></p>
+        <p class="small muted">
+          <b>Badges:</b> pick up on-site at the Ryman Foyer / outside Ryman A Expo Hall.
+          Your registration email comes from the exhibitor portal — bring photo ID.
+          Badge must be worn at all times on the floor.
+        </p>
+        <p class="small muted">
+          The resort is large. Allow <b>15–20 minutes</b> to walk from parking or your room to the hall.
+        </p>
+        <p class="small">
+          <a href="https://www.google.com/maps/search/?api=1&query=Gaylord+Opryland+Resort+2800+Opryland+Dr+Nashville+TN+37214" target="_blank" rel="noopener">↗ Venue on Google Maps</a>
+        </p>
+      </div>
+      <div>
+        <h2>Show day — Monday, August 10</h2>
+        <ul class="tl">
+          <li class="hot"><span class="t">11:15 AM</span><div class="d">Ideal arrival — check in with Kristin at booth 862</div></li>
+          <li class="hot"><span class="t">11:30 AM</span><div class="d">Exhibit hall opens — be ready to step in</div></li>
+          <li><span class="t">12:30 – 2:30 PM</span><div class="d">Vendor lunch window — <b>peak floor traffic.</b> Two of you on the booth: stagger breaks with Kristin so it's never left empty.</div></li>
+          <li><span class="t">5:30 PM</span><div class="d">Show ends — end of shift</div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SAMPLING ============ -->
+  <section>
+    <h2>What you're sampling</h2>
+    <p class="small muted">Four product lines on the table. Full flavour lineup and the day's pour list are confirmed
+    on-site by Kristin — check the printed menus at the booth before doors open.</p>
+    <table>
+      <tr>
+        <th>Product line</th>
+        <th>How it's served</th>
+        <th>Your supplies</th>
+      </tr>
+      <tr>
+        <td class="prodname">Sea Moss Gels</td>
+        <td>1–2 oz jar per guest for trial. 16 oz jars stay on display — one per flavour we're sampling.</td>
+        <td>2 oz jars · wooden spoons · branded napkins</td>
+      </tr>
+      <tr>
+        <td class="prodname">Lemonades with electrolytes</td>
+        <td>Poured fresh into small 4 oz paper cups. Live pouring zone — glass bottles on the shelf for display.</td>
+        <td>Paper cups · napkins · ice · rolling cooler</td>
+      </tr>
+      <tr>
+        <td class="prodname">Sparkling drinks</td>
+        <td>Poured into small 4 oz paper cups, served cold.</td>
+        <td>Paper cups · napkins · ice · rolling cooler</td>
+      </tr>
+      <tr>
+        <td class="prodname">Electrolyte powder</td>
+        <td>Confirm with team on the show day</td>
+        <td>—</td>
+      </tr>
+    </table>
+    <p class="small muted" style="margin-top:12px">
+      <b>Rules of the floor:</b> non-alcoholic beverage samples are capped at <b>3 oz</b>; a 4 oz cup poured
+      short is fine. Everything served must be <b>disposable</b>. A cleaning station with running water is at
+      the back of the floor, and free bagged ice is available at the stations marked on the floorplan.
+    </p>
+  </section>
+
+  <!-- ============ LINKS ============ -->
+  <section>
+    <h2>Links &amp; materials</h2>
+    <div class="links">
+      <a class="lk" href="https://docs.google.com/presentation/d/1Jp6zCTQYS1V6yXMLjTs0yBz-gkO5hRfF7OcRrGLZCFY/edit" target="_blank" rel="noopener">
+        <div class="k">Slides</div>
+        <div class="v">Promo Team Brief — product info</div>
+        <div class="n">Brand story and product lines</div>
+      </a>
+      <a class="lk" href="https://sproutscon2026.vfairs.com/backend/v2/floor-plan-viewer?id=eyJpdiI6IndKTmVQcitQZEZkdHd2VEZpV3kwQWc9PSIsInZhbHVlIjoiOCsxZHd3ZmlzMmFZVVpYTWxyenpNZz09IiwibWFjIjoiZTg0YzAwZTM2M2I5MTdlMzM5MWUzZWQ5ZTM1MTA2OTg0MjU2NzZhMmVjNjRjMjY4OTA2NGNhNjMyOWNkZTNmOCIsInRhZyI6IiJ9" target="_blank" rel="noopener">
+        <div class="k">Venue</div>
+        <div class="v">Interactive show map</div>
+        <div class="n">Live SproutsCon floorplan — find booth 862</div>
+      </a>
+      <a class="lk" href="https://www.trueseamoss.com" target="_blank" rel="noopener">
+        <div class="k">Brand site</div>
+        <div class="v">trueseamoss.com</div>
+        <div class="n">Skim the homepage before the show</div>
+      </a>
+      <a class="lk" href="https://sproutscon2026.vfairs.com/en/" target="_blank" rel="noopener">
+        <div class="k">Event site</div>
+        <div class="v">SproutsCon 2026</div>
+        <div class="n">Agenda and general event info</div>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  True Sea Moss · SproutsCon 2026 · Booth 862 · Monday, August 10, 2026 · Gaylord Opryland Resort &amp; Convention Center, Nashville TN
+</footer>
+
+</div>
+</body>
+</html>
